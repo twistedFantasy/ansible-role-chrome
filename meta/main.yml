@@ -1,6 +1,6 @@
 galaxy_info:
   author: Twisted Fantasy
-  description: your description
+  description: Ansible role to install Chrome and ChromeDriver on Ubuntu
   company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
