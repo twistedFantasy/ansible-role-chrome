@@ -1,0 +1,17 @@
+---
+- name: Install Google Linux signing key
+  apt_key:
+    url: "{{ google_linux_signing_key }}"
+    state: present
+
+- name: Setup Google Chrome repository
+  apt_repository:
+    repo: "{{ chrome_package_repo }}"
+    filename: "{{ chrome_filename }}"
+    state: present
+    update_cache: yes
+
+- name: Install Google Chrome
+  apt:
+    name: "{{ chrome_package_name }}"
+    state: present

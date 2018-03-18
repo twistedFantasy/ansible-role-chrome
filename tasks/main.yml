@@ -1,0 +1,6 @@
+---
+- import_tasks: dependencies.yml
+- import_tasks: chrome.yml
+  tags: chrome
+- import_tasks: chromedriver.yml
+  tags: chromedriver

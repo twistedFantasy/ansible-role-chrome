@@ -1,0 +1,6 @@
+---
+- name: Install dependencies
+  apt:
+    name: unzip
+    state: present
+    update_cache: yes

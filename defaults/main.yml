@@ -1,0 +1,16 @@
+# google
+google_linux_signing_key: "https://dl.google.com/linux/linux_signing_key.pub"
+
+# chrome
+chrome_version: "stable"
+chrome_filename: "google-chrome"
+chrome_package_name: "google-chrome-{{ chrome_version }}"
+chrome_package_repo: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+
+# chromedriver
+chromedriver_version: "latest"
+chromedriver_latest_version: "http://chromedriver.storage.googleapis.com/LATEST_RELEASE"
+chromedriver_url: "http://chromedriver.storage.googleapis.com/{{ chromedriver_version }}/chromedriver_linux64.zip"
+chromedriver_download_path: "/tmp/chromedriver_linux64-{{ chromedriver_version }}.zip"
+chromedriver_path: "{{ chromedriver_install_path }}/chromedriver"
+chromedriver_install_path: /usr/local/bin
